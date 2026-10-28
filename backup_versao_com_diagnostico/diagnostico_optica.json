@@ -1,0 +1,605 @@
+{
+  "materia": "Física",
+  "assunto": "Óptica",
+  "descricao": "Diagnóstico estruturado por habilidades para mapear seu domínio real em Óptica Geométrica e Física, sem punições por dúvidas ou questões em branco.",
+  "blocos": [
+    {
+      "id": "bloco_1",
+      "ordem": 1,
+      "titulo": "Fundamentos da Luz",
+      "tempoEstimado": "4–6 min",
+      "descricao": "Propagação retilínea, câmara escura, meios ópticos, sombra, penumbra e eclipses.",
+      "resumo": "### Conceitos Essenciais\n- **Propagação Retilínea:** Nos meios homogêneos e transparentes, a luz viaja sempre em linha reta. É isso que explica a formação de sombras e o fato de a imagem em uma **câmara escura de orifício** aparecer sempre **invertida** (os raios do topo cruzam o furo em linha reta e atingem a base).\n- **Meios Ópticos:**\n  - *Transparente:* Permite a passagem regular da luz; vemos com nitidez (ex: vidro liso, ar).\n  - *Translúcido:* A luz passa de forma difusa/espalhada; vemos apenas vultos sem nitidez (ex: vidro fosco, papel vegetal).\n  - *Opaco:* Bloqueia a passagem da luz.\n- **Sombra vs. Penumbra:** Fontes pontuais geram apenas sombra nítida (umbra). Fontes extensas geram uma região central totalmente escura (**umbra**) cercada por uma transição parcialmente iluminada (**penumbra**).\n- **Eclipses:** No **Eclipse Solar**, a Lua entra entre o Sol e a Terra, projetando sua sombra na Terra. No **Eclipse Lunar**, a Terra fica entre o Sol e a Lua, projetando sua sombra sobre a Lua.",
+      "habilidades": [
+        { "id": "A1", "nome": "Propagação retilínea e câmara escura" },
+        { "id": "A2", "nome": "Classificação de meios ópticos" },
+        { "id": "A3", "nome": "Sombras, penumbra e eclipses" }
+      ],
+      "questoes": [
+        {
+          "id": "opt_b1_q1",
+          "habilidadeId": "A1",
+          "contexto": "Câmara Escura",
+          "enunciado": "Ao observar uma árvore iluminada pelo Sol através de uma câmara escura de orifício, um estudante percebe que a imagem projetada no fundo da caixa aparece totalmente invertida. Qual princípio óptico explica diretamente essa inversão?",
+          "alternativas": {
+            "A": "A luz sofre difração ao atravessar o pequeno orifício, invertendo a fase das frentes de onda.",
+            "B": "A luz se propaga em linha reta, fazendo os raios vindos do topo da árvore atingirem a base da câmara.",
+            "C": "A luz sofre refração ao passar do ar externo para o ar confinado na caixa, cruzando os raios no centro."
+          },
+          "correta": "B"
+        },
+        {
+          "id": "opt_b1_q2",
+          "habilidadeId": "A2",
+          "contexto": "Meios Ópticos",
+          "enunciado": "Uma divisória de vidro jateado (fosco) permite que a claridade de uma janela ilumine o escritório, mas impede que as pessoas enxerguem com nitidez quem está do outro lado. Fisicamente, esse vidro atua como um meio:",
+          "alternativas": {
+            "A": "Opaco seletivo, pois absorve a imagem e transmite apenas o calor da radiação.",
+            "B": "Translúcido, pois permite a passagem da luz, mas provoca forte espalhamento (difusão) dos raios.",
+            "C": "Transparente de alto índice de refração, desviando todos os raios para um único foco."
+          },
+          "correta": "B"
+        },
+        {
+          "id": "opt_b1_q3",
+          "habilidadeId": "A3",
+          "contexto": "Sombra e Penumbra",
+          "enunciado": "Quando um refletor extenso ilumina um obstáculo opaco, projeta-se na parede uma região central escura cercada por um contorno parcialmente iluminado (penumbra). A penumbra existe porque:",
+          "alternativas": {
+            "A": "A luz sofre interferência destrutiva parcial ao raspar nas bordas do obstáculo.",
+            "B": "Apenas os raios de maior comprimento de onda conseguem contornar o objeto opaco.",
+            "C": "Essa região recebe raios de luz vindos de uma parte da fonte extensa, enquanto outra parte é bloqueada pelo objeto."
+          },
+          "correta": "C"
+        },
+        {
+          "id": "opt_b1_q4",
+          "habilidadeId": "A3",
+          "contexto": "Eclipse Solar",
+          "enunciado": "Durante um eclipse solar, moradores de uma pequena faixa da Terra veem o dia escurecer completamente por alguns minutos, enquanto cidades vizinhas veem o Sol apenas parcialmente coberto. Os moradores que veem o escurecimento total estão localizados:",
+          "alternativas": {
+            "A": "Na região de umbra projetada pela Lua sobre a superfície da Terra.",
+            "B": "Na região de penumbra da Lua, onde a refração atmosférica anula a luz solar.",
+            "C": "Na região de umbra projetada pela Terra sobre a face visível da Lua."
+          },
+          "correta": "A"
+        },
+        {
+          "id": "opt_b1_q5",
+          "habilidadeId": "A3",
+          "contexto": "Eclipse Lunar",
+          "enunciado": "Em uma noite de Lua Cheia, ocorre um eclipse lunar total e a Lua perde seu brilho prateado intenso. Esse fenômeno acontece porque:",
+          "alternativas": {
+            "A": "A Lua entra temporariamente em fase Nova ao cruzar a órbita terrestre.",
+            "B": "A Terra posiciona-se entre o Sol e a Lua, interceptando a luz solar e projetando seu cone de sombra sobre a Lua.",
+            "C": "A luz solar sofre reflexão total interna na atmosfera da Terra, não conseguindo chegar até a superfície lunar."
+          },
+          "correta": "B"
+        }
+      ]
+    },
+    {
+      "id": "bloco_2",
+      "ordem": 2,
+      "titulo": "Reflexão da Luz e Espelhos",
+      "tempoEstimado": "8–12 min",
+      "descricao": "Espelhos planos, espelhos esféricos (côncavos e convexos), raios notáveis e Equação de Gauss.",
+      "resumo": "### Conceitos Essenciais\n- **Lei da Reflexão:** O ângulo de incidência é sempre igual ao ângulo de reflexão ($i = r$), ambos medidos **em relação à reta Normal** (perpendicular à superfície).\n- **Espelho Plano:** Forma imagem **virtual, direita, do mesmo tamanho** e com inversão lateral (enantiomorfa). A distância do objeto ao espelho ($d$) é igual à distância da imagem ao espelho ($d$). Logo, a distância entre a pessoa e sua imagem é $2d$.\n- **Espelho Convexo:** Sempre forma imagem **virtual, direita e menor**, aumentando o campo visual (usado em retrovisores e segurança). Seu foco é negativo ($f < 0$).\n- **Espelho Côncavo ($f > 0$):**\n  - Objeto *além de C*: imagem real, invertida e menor.\n  - Objeto *entre C e F*: imagem real, invertida e maior.\n  - Objeto *no Foco (F)*: raios saem paralelos (imprópria — usada em faróis).\n  - Objeto *entre F e Vértice (V)*: imagem **virtual, direita e maior** (espelho de maquiagem/dentista).\n- **Fórmulas:** $f = R / 2$ | Equação de Gauss: $\\frac{1}{f} = \\frac{1}{p} + \\frac{1}{p'}$ (se $p' > 0$, imagem real; se $p' < 0$, imagem virtual).",
+      "habilidades": [
+        { "id": "B1", "nome": "Lei da reflexão e espelhos planos" },
+        { "id": "B2", "nome": "Espelhos esféricos: formação de imagens e aplicações" },
+        { "id": "B3", "nome": "Raios notáveis e relação foco-raio" },
+        { "id": "B4", "nome": "Cálculos com a Equação de Gauss em espelhos" }
+      ],
+      "questoes": [
+        {
+          "id": "opt_b2_q1",
+          "habilidadeId": "B1",
+          "contexto": "Lei da Reflexão",
+          "enunciado": "Um feixe de laser incide sobre um espelho plano formando um ângulo de 30° com a superfície do espelho. Qual é o valor do ângulo de reflexão (medido em relação à reta normal)?",
+          "alternativas": {
+            "A": "30°.",
+            "B": "60°.",
+            "C": "90°."
+          },
+          "correta": "B"
+        },
+        {
+          "id": "opt_b2_q2",
+          "habilidadeId": "B1",
+          "contexto": "Distância no Espelho Plano",
+          "enunciado": "Uma estudante está parada a 2,0 metros de um grande espelho plano vertical. Se ela caminhar 0,5 metro em direção ao espelho, qual passará a ser a distância entre a estudante e a sua própria imagem?",
+          "alternativas": {
+            "A": "1,5 metro.",
+            "B": "3,0 metros.",
+            "C": "1,0 metro."
+          },
+          "correta": "B"
+        },
+        {
+          "id": "opt_b2_q3",
+          "habilidadeId": "B2",
+          "contexto": "Espelho de Segurança",
+          "enunciado": "Espelhos esféricos convexos são amplamente instalados no alto de corredores de supermercados e saídas de garagens. A escolha desse espelho se deve ao fato de que, para qualquer posição de um objeto real, ele conjuga uma imagem:",
+          "alternativas": {
+            "A": "Real, direita e reduzida, focando a luz diretamente no olho do observador.",
+            "B": "Virtual, direita e menor que o objeto, o que proporciona um amplo campo visual.",
+            "C": "Virtual e ampliada quando o objeto está próximo, facilitando a identificação de rostos."
+          },
+          "correta": "B"
+        },
+        {
+          "id": "opt_b2_q4",
+          "habilidadeId": "B2",
+          "contexto": "Espelho de Maquiagem",
+          "enunciado": "Para enxergar detalhes do rosto ampliados e na posição normal (direita), uma pessoa utiliza um espelho esférico côncavo. Para que o espelho funcione dessa maneira, o rosto precisa estar posicionado:",
+          "alternativas": {
+            "A": "Entre o foco principal (F) e o vértice (V) do espelho.",
+            "B": "Exatamente sobre o centro de curvatura (C) do espelho.",
+            "C": "Entre o foco principal (F) e o centro de curvatura (C)."
+          },
+          "correta": "A"
+        },
+        {
+          "id": "opt_b2_q5",
+          "habilidadeId": "B2",
+          "contexto": "Projeção com Espelho Côncavo",
+          "enunciado": "Em um laboratório, uma vela acesa é colocada além do centro de curvatura (C) de um espelho côncavo. A imagem da chama conjugada por esse espelho será:",
+          "alternativas": {
+            "A": "Virtual, direita e menor, formada atrás do espelho.",
+            "B": "Real, invertida e menor, formada entre o centro de curvatura (C) e o foco (F).",
+            "C": "Real, invertida e maior, formada além do centro de curvatura (C)."
+          },
+          "correta": "B"
+        },
+        {
+          "id": "opt_b2_q6",
+          "habilidadeId": "B2",
+          "contexto": "Farol de Automóvel",
+          "enunciado": "Nos faróis de carros, coloca-se a lâmpada aproximadamente sobre o foco principal de um refletor parabólico/côncavo. O objetivo dessa geometria é fazer com que os raios refletidos:",
+          "alternativas": {
+            "A": "Emerjam paralelos ao eixo principal, alcançando grandes distâncias à frente.",
+            "B": "Se cruzem no centro de curvatura, concentrando calor em um único ponto da pista.",
+            "C": "Diverjam fortemente como se viessem de trás do carro, iluminando as laterais."
+          },
+          "correta": "A"
+        },
+        {
+          "id": "opt_b2_q7",
+          "habilidadeId": "B3",
+          "contexto": "Raios Notáveis",
+          "enunciado": "Em um espelho esférico côncavo ideal, todo raio de luz que incide passando diretamente pelo seu Centro de Curvatura (C), ao atingir o espelho:",
+          "alternativas": {
+            "A": "Reflete paralelamente ao eixo principal.",
+            "B": "Reflete passando obrigatoriamente pelo foco principal (F).",
+            "C": "Reflete sobre si mesmo, retornando exatamente pela mesma trajetória."
+          },
+          "correta": "C"
+        },
+        {
+          "id": "opt_b2_q8",
+          "habilidadeId": "B3",
+          "contexto": "Raio de Curvatura e Foco",
+          "enunciado": "Um espelho esférico côncavo foi construído a partir de uma calota esférica cujo raio de curvatura mede 60 cm. Sob condições de Gauss, qual é a distância focal desse espelho?",
+          "alternativas": {
+            "A": "30 cm.",
+            "B": "60 cm.",
+            "C": "120 cm."
+          },
+          "correta": "A"
+        },
+        {
+          "id": "opt_b2_q9",
+          "habilidadeId": "B4",
+          "contexto": "Equação de Gauss — Côncavo",
+          "enunciado": "Um objeto real é posicionado a 30 cm do vértice de um espelho côncavo de distância focal f = 10 cm. Aplicando a equação de Gauss (1/f = 1/p + 1/p'), a que distância do espelho se forma a imagem e qual a sua natureza?",
+          "alternativas": {
+            "A": "A 15 cm do espelho; imagem real e invertida.",
+            "B": "A 15 cm do espelho; imagem virtual e direita.",
+            "C": "A 20 cm do espelho; imagem real e reduzida."
+          },
+          "correta": "A"
+        },
+        {
+          "id": "opt_b2_q10",
+          "habilidadeId": "B4",
+          "contexto": "Equação de Gauss — Convexo",
+          "enunciado": "Um objeto está a 20 cm de um espelho convexo cujo módulo da distância focal é 20 cm (logo, f = -20 cm na convenção de Gauss). Qual é a posição da imagem (p')?",
+          "alternativas": {
+            "A": "p' = +10 cm (imagem real).",
+            "B": "p' = -10 cm (imagem virtual, formada a 10 cm atrás do espelho).",
+            "C": "p' = -40 cm (imagem virtual, formada a 40 cm atrás do espelho)."
+          },
+          "correta": "B"
+        }
+      ]
+    },
+    {
+      "id": "bloco_3",
+      "ordem": 3,
+      "titulo": "Refração da Luz",
+      "tempoEstimado": "6–10 min",
+      "descricao": "Conceito de refração, índice de refração, desvio angular, Lei de Snell e reflexão total interna (fibras ópticas).",
+      "resumo": "### Conceitos Essenciais\n- **O que é Refração:** É a passagem da luz de um meio para outro onde sua **velocidade de propagação muda**. *Atenção:* a frequência (cor) da luz nunca muda na refração; o que muda é a velocidade ($v$) e o comprimento de onda ($\\lambda$).\n- **Índice de Refração ($n = c / v$):** Quanto maior o índice $n$ (meio mais refringente), **menor** é a velocidade da luz naquele meio.\n- **Desvio do Raio (Incidência Oblíqua):**\n  - Do meio *menos* para o *mais* refringente ($n_1 < n_2$): a velocidade cai e o raio **se aproxima da Normal**.\n  - Do meio *mais* para o *menos* refringente ($n_1 > n_2$): a velocidade sobe e o raio **se afasta da Normal**.\n  - *Incidência perpendicular (0° com a normal):* a velocidade muda, mas **não há desvio angular**.\n- **Lei de Snell:** $n_1 \\cdot \\text{sen}(i) = n_2 \\cdot \\text{sen}(r)$.\n- **Reflexão Total Interna:** Só ocorre quando a luz tenta passar do meio **mais refringente para o menos refringente** com ângulo de incidência **maior que o ângulo limite ($L$)**.",
+      "habilidades": [
+        { "id": "C1", "nome": "Conceito físico da refração e posição aparente" },
+        { "id": "C2", "nome": "Índice de refração e velocidade da luz" },
+        { "id": "C3", "nome": "Desvio angular e incidência normal" },
+        { "id": "C4", "nome": "Aplicação algébrica da Lei de Snell" },
+        { "id": "C5", "nome": "Reflexão total interna e ângulo limite" }
+      ],
+      "questoes": [
+        {
+          "id": "opt_b3_q1",
+          "habilidadeId": "C1",
+          "contexto": "Profundidade Aparente",
+          "enunciado": "Um observador na borda de uma piscina olha para um azulejo no fundo e tem a nítida impressão de que a piscina é mais rasa do que realmente é. Isso ocorre porque os raios de luz que saem da água para o ar:",
+          "alternativas": {
+            "A": "Sofrem reflexão total na superfície, projetando uma miragem do fundo.",
+            "B": "Aumentam de velocidade ao entrar no ar e se afastam da normal, mudando a posição aparente da imagem.",
+            "C": "Sofrem difração nas moléculas da água, ampliando o tamanho aparente do azulejo."
+          },
+          "correta": "B"
+        },
+        {
+          "id": "opt_b3_q2",
+          "habilidadeId": "C1",
+          "contexto": "Grandezas na Refração",
+          "enunciado": "Quando um feixe de luz monocromática vermelha passa do ar para um bloco de vidro, o que acontece com a sua velocidade de propagação e com a sua frequência?",
+          "alternativas": {
+            "A": "A velocidade diminui e a frequência permanece exatamente a mesma.",
+            "B": "A velocidade e a frequência diminuem na mesma proporção.",
+            "C": "A velocidade permanece constante, mas a frequência diminui."
+          },
+          "correta": "A"
+        },
+        {
+          "id": "opt_b3_q3",
+          "habilidadeId": "C2",
+          "contexto": "Cálculo do Índice de Refração",
+          "enunciado": "Sabendo que a velocidade da luz no vácuo é c = 3,0 × 10⁸ m/s e que em um determinado cristal a luz viaja a v = 1,5 × 10⁸ m/s, qual é o índice de refração absoluto (n = c/v) desse cristal?",
+          "alternativas": {
+            "A": "n = 0,5.",
+            "B": "n = 1,5.",
+            "C": "n = 2,0."
+          },
+          "correta": "C"
+        },
+        {
+          "id": "opt_b3_q4",
+          "habilidadeId": "C3",
+          "contexto": "Desvio Angular",
+          "enunciado": "Um raio de luz incide obliquamente passando do ar (n = 1,0) para a água (n = 1,33). Ao entrar na água, o raio refratado:",
+          "alternativas": {
+            "A": "Aproxima-se da reta normal, pois entrou em um meio mais refringente.",
+            "B": "Afasta-se da reta normal, pois a densidade da água empurra o feixe para a superfície.",
+            "C": "Segue sem sofrer desvio angular, reduzindo apenas a sua intensidade."
+          },
+          "correta": "A"
+        },
+        {
+          "id": "opt_b3_q5",
+          "habilidadeId": "C3",
+          "contexto": "Incidência Perpendicular",
+          "enunciado": "Um feixe de laser incide perpendicularmente à superfície plana de um aquário (formando 90° com o vidro, ou seja, ângulo de incidência 0° com a normal). Ao penetrar na água:",
+          "alternativas": {
+            "A": "O feixe sofre reflexão total por atingir o vidro de frente.",
+            "B": "O feixe não sofre desvio em sua direção, mas sua velocidade de propagação diminui.",
+            "C": "Nem a direção nem a velocidade mudam, logo não ocorre o fenômeno da refração."
+          },
+          "correta": "B"
+        },
+        {
+          "id": "opt_b3_q6",
+          "habilidadeId": "C4",
+          "contexto": "Lei de Snell",
+          "enunciado": "Um raio de luz passa do ar (n₁ = 1,0) para um meio transparente de índice n₂ = √3, incidindo com ângulo de 60° (dados: sen 60° = √3/2 e sen 30° = 1/2). Pela Lei de Snell (n₁·sen i = n₂·sen r), qual é o ângulo de refração?",
+          "alternativas": {
+            "A": "30°.",
+            "B": "45°.",
+            "C": "60°."
+          },
+          "correta": "A"
+        },
+        {
+          "id": "opt_b3_q7",
+          "habilidadeId": "C5",
+          "contexto": "Condição da Reflexão Total",
+          "enunciado": "Nas fibras ópticas de internet, pulsos de luz viajam quilômetros sem escapar pelas paredes do cabo graças à reflexão total interna. Para que esse fenômeno ocorra, a luz deve incidir na interface tentando passar:",
+          "alternativas": {
+            "A": "Do núcleo de maior índice de refração para a casca de menor índice, com ângulo maior que o ângulo limite.",
+            "B": "Da casca de menor índice para o núcleo de maior índice, em qualquer ângulo de incidência.",
+            "C": "De um meio para outro de igual índice de refração, incidindo a 0° com a normal."
+          },
+          "correta": "A"
+        },
+        {
+          "id": "opt_b3_q8",
+          "habilidadeId": "C5",
+          "contexto": "Ângulo Limite",
+          "enunciado": "Um raio de luz viaja de um plástico (n = 2,0) em direção ao ar (n = 1,0). Sabendo que sen(L) = n_menor / n_maior, qual é o ângulo limite (L) a partir do qual ocorre reflexão total? (Dado: sen 30° = 0,5).",
+          "alternativas": {
+            "A": "15°.",
+            "B": "30°.",
+            "C": "60°."
+          },
+          "correta": "B"
+        }
+      ]
+    },
+    {
+      "id": "bloco_4",
+      "ordem": 4,
+      "titulo": "Lentes Esféricas",
+      "tempoEstimado": "8–12 min",
+      "descricao": "Lentes convergentes e divergentes, raios notáveis, formação de imagens e equação de Gauss/aumento linear.",
+      "resumo": "### Conceitos Essenciais\n- **No Ar ($n_{\\text{lente}} > n_{\\text{ar}}$):**\n  - *Bordas Finas (biconvexa, plano-convexa):* **Convergente** ($f > 0$). Concentra raios paralelos no foco real.\n  - *Bordas Grossas (bicôncava):* **Divergente** ($f < 0$). Espalha os raios.\n- **Imagens na Lente Divergente:** Para qualquer objeto real, a imagem é **sempre virtual, direita e menor** (igual ao espelho convexo).\n- **Imagens na Lente Convergente:**\n  - Objeto *além de 2F*: real, invertida e menor (câmera fotográfica / olho).\n  - Objeto *entre 2F e F*: real, invertida e maior (projetor de cinema / objetiva do microscópio).\n  - Objeto *entre F e o Centro Óptico (O)*: **virtual, direita e maior** (Lupa).\n- **Raios Notáveis:** Raio que passa pelo **Centro Óptico (O)** atravessa a lente **sem sofrer desvio angular**.\n- **Equações:** $\\frac{1}{f} = \\frac{1}{p} + \\frac{1}{p'}$ e Aumento Linear: $A = \\frac{i}{o} = -\\frac{p'}{p}$ | Vergência (Grau): $V = \\frac{1}{f\\text{ (em metros)}}$ em dioptrias (di).",
+      "habilidades": [
+        { "id": "D1", "nome": "Comportamento óptico de lentes convergentes e divergentes" },
+        { "id": "D2", "nome": "Raios notáveis em lentes delgadas" },
+        { "id": "D3", "nome": "Formação de imagens (lupa, projetor e lente divergente)" },
+        { "id": "D4", "nome": "Equação de Gauss, vergência e aumento linear em lentes" }
+      ],
+      "questoes": [
+        {
+          "id": "opt_b4_q1",
+          "habilidadeId": "D1",
+          "contexto": "Tipos de Lentes",
+          "enunciado": "Uma lente de vidro comum, imersa no ar, possui o centro mais espesso do que as extremidades (bordas finas). Quando um feixe de raios paralelos ao eixo principal atravessa essa lente, os raios:",
+          "alternativas": {
+            "A": "Convergem em direção ao foco principal real, situado do outro lado da lente.",
+            "B": "Divergem como se saíssem de um foco virtual do mesmo lado da fonte.",
+            "C": "Sofrem reflexão total, retornando ao meio de origem."
+          },
+          "correta": "A"
+        },
+        {
+          "id": "opt_b4_q2",
+          "habilidadeId": "D1",
+          "contexto": "Lente Divergente",
+          "enunciado": "Ao observar as letras de um livro através de uma lente esférica divergente (imersa no ar), independentemente da distância entre a lente e o papel, o leitor verá letras:",
+          "alternativas": {
+            "A": "Maiores e direitas (imagem virtual).",
+            "B": "Menores e direitas (imagem virtual).",
+            "C": "Menores e de cabeça para baixo (imagem real)."
+          },
+          "correta": "B"
+        },
+        {
+          "id": "opt_b4_q3",
+          "habilidadeId": "D2",
+          "contexto": "Centro Óptico",
+          "enunciado": "Na construção geométrica de imagens em uma lente esférica delgada ideal, todo raio de luz que incide passando exatamente pelo Centro Óptico (O) da lente:",
+          "alternativas": {
+            "A": "Desvia-se passando obrigatoriamente pelo foco principal.",
+            "B": "Emerge paralelamente ao eixo principal da lente.",
+            "C": "Atravessa a lente sem sofrer desvio angular em sua direção."
+          },
+          "correta": "C"
+        },
+        {
+          "id": "opt_b4_q4",
+          "habilidadeId": "D3",
+          "contexto": "Funcionamento da Lupa",
+          "enunciado": "Um relojoeiro utiliza uma lente convergente de distância focal f = 10 cm como lupa para enxergar uma engrenagem ampliada e direita. A que distância da lente ele deve posicionar a engrenagem?",
+          "alternativas": {
+            "A": "A uma distância menor que 10 cm (entre o foco e o centro óptico).",
+            "B": "Exatamente a 10 cm (sobre o foco principal).",
+            "C": "A uma distância maior que 20 cm (além do ponto antiprincipal 2F)."
+          },
+          "correta": "A"
+        },
+        {
+          "id": "opt_b4_q5",
+          "habilidadeId": "D3",
+          "contexto": "Projetor de Sala de Aula",
+          "enunciado": "Para projetar na parede uma imagem real e ampliada de um slide iluminado, utiliza-se uma lente convergente. Para isso, o slide deve ficar posicionado:",
+          "alternativas": {
+            "A": "Entre o foco (F) e o centro óptico (O) da lente.",
+            "B": "Entre o foco (F) e o ponto antiprincipal (2F) da lente.",
+            "C": "Muito além do ponto 2F da lente."
+          },
+          "correta": "B"
+        },
+        {
+          "id": "opt_b4_q6",
+          "habilidadeId": "D4",
+          "contexto": "Vergência (Dioptria)",
+          "enunciado": "Uma receita oftalmológica indica uma lente convergente de vergência (grau) igual a +2,0 di (dioptrias). Sabendo que V = 1/f (com f em metros), qual é a distância focal dessa lente?",
+          "alternativas": {
+            "A": "0,5 m (ou 50 cm).",
+            "B": "2,0 m (ou 200 cm).",
+            "C": "0,2 m (ou 20 cm)."
+          },
+          "correta": "A"
+        },
+        {
+          "id": "opt_b4_q7",
+          "habilidadeId": "D4",
+          "contexto": "Equação de Gauss — Lente Convergente",
+          "enunciado": "Um objeto real é colocado a 30 cm de uma lente convergente de distância focal f = 15 cm. Pela equação de Gauss (1/f = 1/p + 1/p'), onde se forma a imagem?",
+          "alternativas": {
+            "A": "p' = 30 cm (imagem real, do outro lado da lente).",
+            "B": "p' = 10 cm (imagem real, do outro lado da lente).",
+            "C": "p' = -30 cm (imagem virtual, do mesmo lado do objeto)."
+          },
+          "correta": "A"
+        },
+        {
+          "id": "opt_b4_q8",
+          "habilidadeId": "D4",
+          "contexto": "Equação de Gauss — Lente Divergente",
+          "enunciado": "Um objeto é posicionado a 20 cm de uma lente divergente cuja distância focal é f = -20 cm. Qual é a posição da imagem (p')?",
+          "alternativas": {
+            "A": "p' = -10 cm (virtual, a 10 cm da lente).",
+            "B": "p' = +10 cm (real, a 10 cm da lente).",
+            "C": "p' = -40 cm (virtual, a 40 cm da lente)."
+          },
+          "correta": "A"
+        },
+        {
+          "id": "opt_b4_q9",
+          "habilidadeId": "D4",
+          "contexto": "Aumento Linear",
+          "enunciado": "Uma lente convergente conjuga, para um objeto situado a p = 20 cm, uma imagem real situada a p' = 60 cm. Qual é o módulo do aumento linear transversal (|A| = p'/p) e a orientação dessa imagem?",
+          "alternativas": {
+            "A": "Imagem 3 vezes maior que o objeto e invertida.",
+            "B": "Imagem 3 vezes maior que o objeto e direita.",
+            "C": "Imagem reduzida a 1/3 do objeto e invertida."
+          },
+          "correta": "A"
+        }
+      ]
+    },
+    {
+      "id": "bloco_5",
+      "ordem": 5,
+      "titulo": "Instrumentos Ópticos e Visão",
+      "tempoEstimado": "4–6 min",
+      "descricao": "Óptica do olho humano, miopia, hipermetropia, presbiopia e funcionamento de câmeras e microscópios.",
+      "resumo": "### Conceitos Essenciais\n- **Olho Humano Normal (Emetrope):** Funciona como uma câmara fotográfica com lente convergente (córnea + cristalino). Projeta exatamente sobre a **retina** uma imagem **real, invertida e menor**.\n- **Miopia:** O olho é 'longo demais' ou muito convergente. A imagem de objetos distantes se forma **antes da retina**. *Correção:* **Lente Divergente** ($f < 0$, grau negativo), que espalha levemente os raios para empurrar o foco até a retina.\n- **Hipermetropia:** O olho é 'curto' ou pouco convergente. A imagem de objetos próximos se formaria **atrás da retina**. *Correção:* **Lente Convergente** ($f > 0$, grau positivo).\n- **Presbiopia (Vista Cansada):** Perda de elasticidade do cristalino com a idade, dificultando focar de perto. *Correção:* **Lente Convergente** para leitura.",
+      "habilidades": [
+        { "id": "E1", "nome": "Formação de imagem no olho humano" },
+        { "id": "E2", "nome": "Defeitos da visão e lentes corretivas (miopia, hipermetropia e presbiopia)" },
+        { "id": "E3", "nome": "Funcionamento óptico de câmeras e microscópios" }
+      ],
+      "questoes": [
+        {
+          "id": "opt_b5_q1",
+          "habilidadeId": "E1",
+          "contexto": "Olho Humano e Câmera",
+          "enunciado": "Tanto no olho humano saudável quanto no sensor de uma câmera fotográfica, o sistema de lentes convergentes projeta no fundo (retina ou sensor) uma imagem cujas características ópticas são:",
+          "alternativas": {
+            "A": "Virtual, direita e do mesmo tamanho do objeto observado.",
+            "B": "Real, invertida e menor que o objeto observado.",
+            "C": "Real, direita e ampliada em relação ao objeto."
+          },
+          "correta": "B"
+        },
+        {
+          "id": "opt_b5_q2",
+          "habilidadeId": "E2",
+          "contexto": "Miopia vs. Hipermetropia",
+          "enunciado": "Na miopia, a imagem de objetos distantes forma-se ANTES da retina; na hipermetropia, a imagem de objetos próximos tenderia a formar-se ATRÁS da retina. As lentes corretivas para miopia e hipermetropia são, respectivamente:",
+          "alternativas": {
+            "A": "Divergente (grau negativo) e Convergente (grau positivo).",
+            "B": "Convergente (grau positivo) e Divergente (grau negativo).",
+            "C": "Cilíndrica plana e Divergente esférica."
+          },
+          "correta": "A"
+        },
+        {
+          "id": "opt_b5_q3",
+          "habilidadeId": "E2",
+          "contexto": "Presbiopia",
+          "enunciado": "Com o envelhecimento, o cristalino perde elasticidade (capacidade de acomodação visual), dificultando a leitura de perto — condição chamada presbiopia. Para corrigir essa dificuldade de leitura, utilizam-se:",
+          "alternativas": {
+            "A": "Lentes divergentes, para afastar o ponto próximo.",
+            "B": "Lentes convergentes, auxiliando o olho a convergir os raios na retina.",
+            "C": "Espelhos planos acoplados a prismas dispersores."
+          },
+          "correta": "B"
+        },
+        {
+          "id": "opt_b5_q4",
+          "habilidadeId": "E3",
+          "contexto": "Microscópio Composto",
+          "enunciado": "Um microscópio óptico composto possui duas lentes convergentes: a objetiva (perto da lâmina) e a ocular (perto do olho). A função óptica da lente objetiva é:",
+          "alternativas": {
+            "A": "Conjugar uma primeira imagem real e ampliada da amostra, que servirá de objeto para a ocular ampliar ainda mais.",
+            "B": "Conjugar uma imagem virtual e reduzida para concentrar a luz na pupila.",
+            "C": "Apenas filtrar as cores da luz sem alterar o tamanho aparente da célula."
+          },
+          "correta": "A"
+        }
+      ]
+    },
+    {
+      "id": "bloco_6",
+      "ordem": 6,
+      "titulo": "Fenômenos Ondulatórios da Luz e Cores",
+      "tempoEstimado": "5–8 min",
+      "descricao": "Dispersão luminosa, arco-íris, cor dos objetos sob luz monocromática, difração, interferência e polarização.",
+      "resumo": "### Conceitos Essenciais\n- **Dispersão da Luz:** A luz branca é policromática (mistura de todas as cores). Em meios materiais (vidro, água), **cada cor (frequência) viaja com uma velocidade ligeiramente diferente**, tendo um índice de refração próprio. O **violeta** (maior frequência) sofre o **maior desvio**; o **vermelho** sofre o menor.\n- **Arco-Íris:** Ocorre quando a luz solar sofre **refração (com dispersão)** ao entrar na gota de água, **reflexão interna** no fundo da gota e nova **refração** ao sair.\n- **Cor dos Objetos:** Um corpo iluminado não emite luz própria; ele **reflete difusamente** a cor que o caracteriza e **absorve** as demais. Ex: Um objeto vermelho sob luz puramente azul absorve o azul e parece **preto/escuro**.\n- **Fenômenos Ondulatórios:**\n  - *Difração:* Capacidade da onda de contornar obstáculos ou se espalhar ao passar por fendas da ordem do seu comprimento de onda ($\\lambda$).\n  - *Interferência:* Superposição de ondas gerando reforço (**construtiva** — faixa clara) ou anulação (**destrutiva** — faixa escura).\n  - *Polarização:* Seleção de um único plano de vibração do campo elétrico (prova que a luz é uma onda **transversal**).",
+      "habilidades": [
+        { "id": "F1", "nome": "Dispersão da luz em prismas e formação do arco-íris" },
+        { "id": "F2", "nome": "Cor dos objetos por reflexão e absorção" },
+        { "id": "F3", "nome": "Difração, interferência e polarização luminosa" }
+      ],
+      "questoes": [
+        {
+          "id": "opt_b6_q1",
+          "habilidadeId": "F1",
+          "contexto": "Dispersão no Prisma",
+          "enunciado": "Quando um feixe estreito de luz branca atravessa um prisma de vidro, ele emerge separado nas várias cores do espectro visível. Essa separação ocorre porque, no interior do vidro:",
+          "alternativas": {
+            "A": "Cada cor possui uma frequência diferente e propaga-se com velocidade ligeiramente diferente, sofrendo desvios angulares distintos.",
+            "B": "O vidro sofre fluorescência química e passa a emitir cores primárias quando aquecido pela luz.",
+            "C": "A luz branca sofre difração exclusiva nas faces externas, sem depender do índice de refração."
+          },
+          "correta": "A"
+        },
+        {
+          "id": "opt_b6_q2",
+          "habilidadeId": "F1",
+          "contexto": "Formação do Arco-Íris",
+          "enunciado": "O arco-íris observado no céu quando o Sol ilumina uma cortina de chuva é resultado da interação da luz solar com milhões de gotículas de água. Quais fenômenos ópticos ocorrem em cada gota para formar o arco-íris?",
+          "alternativas": {
+            "A": "Apenas polarização e difração da luz solar na superfície externa da gota.",
+            "B": "Refração com dispersão cromática na entrada da gota, reflexão interna e nova refração na saída.",
+            "C": "Absorção total da luz solar pela água seguida de emissão térmica de cores."
+          },
+          "correta": "B"
+        },
+        {
+          "id": "opt_b6_q3",
+          "habilidadeId": "F2",
+          "contexto": "Cores sob Luz Monocromática",
+          "enunciado": "Em um ambiente totalmente escuro, uma bandeira que sob a luz do Sol apresenta uma faixa BRANCA e uma faixa VERMELHA é iluminada exclusivamente por um feixe de luz monocromática VERDE. De que cores serão vistas as faixas branca e vermelha, respectivamente?",
+          "alternativas": {
+            "A": "Branca e vermelha, pois a cor é uma propriedade intrínseca do pigmento.",
+            "B": "Verde e preta (escura), pois a faixa branca reflete o verde e a vermelha absorve o verde.",
+            "C": "Verde e amarela, pela mistura aditiva entre o pigmento vermelho e a luz verde."
+          },
+          "correta": "B"
+        },
+        {
+          "id": "opt_b6_q4",
+          "habilidadeId": "F3",
+          "contexto": "Difração Luminosa",
+          "enunciado": "Quando um feixe de laser passa por uma fenda extremamente estreita (com largura próxima ao comprimento de onda da luz), ele não projeta apenas um ponto na parede, mas espalha-se formando uma faixa alargada. Esse fenômeno é a:",
+          "alternativas": {
+            "A": "Refração atmosférica.",
+            "B": "Difração da luz.",
+            "C": "Reflexão total interna."
+          },
+          "correta": "B"
+        },
+        {
+          "id": "opt_b6_q5",
+          "habilidadeId": "F3",
+          "contexto": "Experimento da Fenda Dupla",
+          "enunciado": "No famoso experimento de Young, a luz coerente atravessa duas fendas paralelas e projeta em um anteparo um padrão alternado de franjas claras e franjas escuras. As franjas escuras ocorrem nos pontos onde as ondas chegam:",
+          "alternativas": {
+            "A": "Em oposição de fase, sofrendo interferência destrutiva.",
+            "B": "Em concordância de fase, sofrendo interferência construtiva.",
+            "C": "Polarizadas verticalmente, bloqueando a visão humana."
+          },
+          "correta": "A"
+        },
+        {
+          "id": "opt_b6_q6",
+          "habilidadeId": "F3",
+          "contexto": "Lentes Polarizadas",
+          "enunciado": "Fotógrafos e motoristas utilizam filtros e óculos polarizadores para eliminar o brilho ofuscante da luz refletida horizontalmente no capô de carros ou na superfície da água. O filtro polarizador funciona porque:",
+          "alternativas": {
+            "A": "Permite a passagem apenas das ondas luminosas cujo campo elétrico oscila em uma direção específica, bloqueando a componente perpendicular.",
+            "B": "Aumenta a frequência da luz refletida, transformando o brilho visível em radiação ultravioleta invisível.",
+            "C": "Funciona como uma lente divergente que desvia o reflexo para fora da retina."
+          },
+          "correta": "A"
+        }
+      ]
+    }
+  ]
+}
